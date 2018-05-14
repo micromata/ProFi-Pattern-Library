@@ -1,0 +1,24 @@
+{
+  "useHandlebars": false,
+  "generateBanners": false,
+  "bundleCSS": [],
+  "bundleExternalJS": [
+    "jquery",
+    "bootstrap"
+  ],
+  "includeStaticFiles": [],
+  "webpack": {
+    "DefinePlugin": {
+      "dev": {},
+      "prod": {
+        "process.env": {
+          "NODE_ENV": "'production'"
+        }
+      }
+    },
+    "ProvidePlugin": {
+      "$": "jquery",
+      "jQuery": "jquery"
+    }
+  }
+}
